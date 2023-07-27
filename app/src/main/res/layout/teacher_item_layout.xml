@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardBackgroundColor="#FAF9F9"
+    android:layout_height="@dimen/_150sdp"
+    android:gravity="center_vertical"
+    android:layout_margin="@dimen/_5sdp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:gravity="center_vertical"
+            android:layout_gravity="center_vertical"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center_vertical"
+                android:layout_weight="1.5">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/teacherName"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Aman Mugut"
+                    android:textColor="@color/textColor"
+                    android:fontFamily="@font/acme"
+                    android:textSize="@dimen/_18ssp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/teacherPost"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Principal"
+                    android:textColor="@color/textColor"
+                    android:fontFamily="@font/acme"
+                    android:textSize="@dimen/_18ssp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/teacherEmail"
+                    android:text="aman@gmail.com"
+                    android:maxLines="1"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="@color/textColor"
+                    android:fontFamily="@font/acme"
+                    android:textSize="@dimen/_15ssp"/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/teacherupdate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Update Profile"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginVertical="@dimen/_6sdp"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"/>
+            </LinearLayout>
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/teacherimage"
+                android:layout_width="@dimen/_10sdp"
+                android:autofillHints="photo"
+                android:layout_height="@dimen/_110sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:src="@drawable/profile"
+                android:layout_weight="0.5"
+                android:layout_gravity="center_horizontal"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

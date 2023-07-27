@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    tools:context=".UpdateTeacher">
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/faculty"
+        style="@style/ShapeAppearanceOverlay.Material3.FloatingActionButton"
+        android:layout_gravity="bottom|right"
+        android:src="@drawable/ic_add"
+        android:elevation="@dimen/_3sdp"
+        app:fabSize="normal"
+        android:backgroundTint="@color/red2"
+        android:layout_margin="@dimen/_15sdp"/>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            //CS
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="@dimen/_300sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:background="@drawable/edittext_bg"
+                android:hint="Computer Science"
+                android:textSize="@dimen/_20ssp"
+                android:fontFamily="@font/acme"
+                android:gravity="center"
+                android:layout_margin="@dimen/_10sdp"
+                android:textColor="@color/white"
+                android:textColorHint="#D3D3D3" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/csDepartment"
+                android:visibility="gone"
+                android:nestedScrollingEnabled="false"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="@dimen/_5sdp"
+                android:background="#641BA6"
+                android:id="@+id/csNoData">
+                <include layout="@layout/no_data_found"/>
+            </LinearLayout>
+
+
+
+
+            //ENTC
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="@dimen/_300sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:background="@drawable/edittext_bg"
+                android:hint="Electronics and Telecommunication"
+                android:textSize="@dimen/_20ssp"
+                android:fontFamily="@font/acme"
+                android:gravity="center"
+                android:layout_margin="@dimen/_10sdp"
+                android:textColor="@color/white"
+                android:textColorHint="#D3D3D3" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/entcDepartment"
+                android:visibility="gone"
+                android:nestedScrollingEnabled="false"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="@dimen/_5sdp"
+                android:background="#641BA6"
+                android:id="@+id/entcNoData">
+                <include layout="@layout/no_data_found"/>
+            </LinearLayout>
+
+
+
+
+
+
+
+
+            //IT
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="@dimen/_300sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:background="@drawable/edittext_bg"
+                android:hint="Information Technology"
+                android:textSize="@dimen/_20ssp"
+                android:fontFamily="@font/acme"
+                android:gravity="center"
+                android:layout_margin="@dimen/_10sdp"
+                android:textColor="@color/white"
+                android:textColorHint="#D3D3D3" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/itDepartment"
+                android:visibility="gone"
+                android:nestedScrollingEnabled="false"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="@dimen/_5sdp"
+                android:background="#641BA6"
+                android:id="@+id/itNoData">
+                <include layout="@layout/no_data_found"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

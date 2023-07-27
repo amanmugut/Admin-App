@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    tools:context=".AddTeacher">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_10sdp"
+        android:gravity="center"
+        android:padding="@dimen/_10sdp"
+        android:orientation="vertical">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/addTeacherimage"
+            android:layout_width="@dimen/_90sdp"
+            android:autofillHints="photo"
+            android:layout_height="@dimen/_90sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:src="@drawable/profile"
+            android:layout_marginBottom="@dimen/_10sdp"
+            app:civ_border_color="#FFFFFF"/>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/addTeacherName"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:background="@drawable/edittext_bg"
+            android:hint="Enter Name"
+            android:textSize="@dimen/_17ssp"
+            android:fontFamily="@font/acme"
+            android:inputType="text"
+            android:paddingTop="@dimen/_10sdp"
+            android:gravity="center_horizontal"
+            android:maxLines="1"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:textColor="@color/white"
+            android:textColorHint="#D3D3D3" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/addTeacherEmail"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:background="@drawable/edittext_bg"
+            android:hint="Enter Email"
+            android:textSize="@dimen/_17ssp"
+            android:fontFamily="@font/acme"
+            android:inputType="textEmailAddress"
+            android:paddingTop="@dimen/_10sdp"
+            android:gravity="center_horizontal"
+            android:maxLines="1"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:textColor="@color/white"
+            android:textColorHint="#D3D3D3" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/addTeacherPost"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:background="@drawable/edittext_bg"
+            android:hint="Enter Post"
+            android:textSize="@dimen/_17ssp"
+            android:fontFamily="@font/acme"
+            android:inputType="text"
+            android:paddingTop="@dimen/_10sdp"
+            android:gravity="center_horizontal"
+            android:maxLines="1"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:textColor="@color/white"
+            android:textColorHint="#D3D3D3" />
+        
+        <Spinner
+            android:id="@+id/addTeacherCategory"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:entries="@array/category_teachers"
+            android:gravity="center_horizontal"
+            android:spinnerMode="dropdown"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:background="@drawable/edittext_bg"
+            android:popupBackground="@drawable/edittext_bg"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/addTeacherbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_45sdp"
+            android:background="@drawable/ripple_button_background"
+            android:text="Add Teacher"
+            android:textColor="@color/white"
+            android:paddingRight="@dimen/_15sdp"
+            android:paddingLeft="@dimen/_15sdp"
+            android:textSize="18sp"
+            android:textStyle="bold">
+        </androidx.appcompat.widget.AppCompatButton>
+
+    </LinearLayout>
+
+
+</ScrollView>

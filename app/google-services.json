@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "538095679110",
+    "project_id": "admin-fdc07",
+    "storage_bucket": "admin-fdc07.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:538095679110:android:61f5a2a197c34554294307",
+        "android_client_info": {
+          "package_name": "com.example.admin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "538095679110-j43dgurbo4f3ll8cvc79d2sfr1dsu28a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBBXKDg49ahEFgXOyAlMrhjjFYM8uAbAoU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "538095679110-j43dgurbo4f3ll8cvc79d2sfr1dsu28a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
